@@ -16,8 +16,6 @@ currentCityTag.innerHTML = currentCity;
 displayCurrentWeather(currentCity);
 // afisam si prognoza pt urm 5 zile 
 displayWeatherForecast(currentCity);
-
-let h = innerHeight;
 const scrollToTopButton = document.querySelector(".ScrollToTop");
 
 scrollToTopButton.addEventListener("click", function () {
@@ -28,7 +26,7 @@ scrollToTopButton.addEventListener("click", function () {
 });
 
 document.addEventListener("scroll", function () {
-  if (window.scrollY > h/2) {
+  if (window.scrollY > innerHeight/2) {
     scrollToTopButton.style.visibility = "visible";
   } else {
     scrollToTopButton.style.visibility = "hidden";
